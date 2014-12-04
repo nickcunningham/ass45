@@ -9,7 +9,13 @@
 
 		li { float: left; }
 
-		a.class1:link, a.class1:visited {
+		body { background-repeat: no-repeat; }
+
+		input[type=number]{ width: 30px; }
+
+		table {border: none;}
+
+		a.menu:link, a.menu:visited {
 			text-decoration: none;
 			display: block;
 			width: 120px;
@@ -20,21 +26,65 @@
 			padding: 3px;
 		}
 
-		a.class1:hover, a.class1:active { background-color: #7A991A; }
+		a.menu:hover, a.menu:active { background-color: #7A991A; }
 	</style>
 </head>
 
 
-<body>
+<body background="bg.png">
 	<ul>
-		<li><a href="index.html" class="class1">Home</a></li>
-		<li><a href="catalogue.html" class="class1"><FONT COLOR="black">Catalogue</FONT></a></li>
-		<li><a href="login.html" target="_blank" class="class1">Login</a></li>
+		<li><a href="index.html" class="menu">Home</a></li>
+		<li><a href="catalogue.html" class="menu"><FONT COLOR="black">Catalogue</FONT></a></li>
+		<li><a href="login.html" target="_blank" class="menu">Login</a></li>
 	</ul>
 
-	<br>
+	<br><br>
 
-	<p>lorem ipsum</p>
+	<!--YO MAKE THE MAXES WORK-->
+	<form action="Purchase.py" method="post">
+		<input type="hidden" name="username" value="">
+		<table border=0px>
+			<tr>
+				<td width=100px>
+					$10.00
+					<br><br>
+					<input type="checkbox" name="tale" value="1">
+					<input type="number" name="taleno" value="0" min="0">
+				</td>
+
+				<td><p align="center"><img src="tale.jpg" alt="A TALE OF TWO CITIES" height="200" ></p></td>
+
+				<td>
+					<p><b><i>A Tale of Two Cities</i> - Charles Dickens</b>: Published both serially and in book form in 1859, the story is set in the late 18th century against the background of the French Revolution. Although Dickens borrowed from Thomas Carlyle's history, The French Revolution, for his sprawling tale of London and revolutionary Paris, the novel offers more drama than accuracy. The scenes of large-scale mob violence are especially vivid, if superficial in historical understanding. The complex plot involves Sydney Carton's sacrifice of his own life on behalf of his friends Charles Darnay and Lucie Manette. While political events drive the story, Dickens takes a decidedly antipolitical tone, lambasting both aristocratic tyranny and revolutionary excess--the latter memorably caricatured in Madame Defarge, who knits beside the guillotine. The book is perhaps best known for its opening lines, "It was the best of times, it was the worst of times," and for Carton's last speech, in which he says of his replacing Darnay in a prison cell, "It is a far, far better thing that I do, than I have ever done; it is a far, far better rest that I go to, than I have ever known."</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					$20.00					<br><br>
+					<input type="checkbox" name="lord" value="1">
+					<input type="number" name="lordno" value="0" min="0">
+				</td>
+				<td><p align="center"><img src="lord.jpg" alt="LORD OF THE RINGS" height="200"></p></td>
+				<td>
+					<p><b><i>The Lord of the Rings</i> - J. R. R. Tolkein</b>: Continuing the story of The Hobbit, this three-volume paperback boxed set of Tolkien's epic masterpiece, The Lord of the Rings, features exclusive covers from Peter Jackson's award-winning film trilogy, the definitive text, and a detailed map of Middle-earth. Sauron, the Dark Lord, has gathered to him all the Rings of Power -- the means by which he intends to rule Middle-earth. All he lacks in his plans for dominion is the One Ring -- the ring that rules them all -- which has fallen into the hands of the hobbit, Bilbo Baggins. In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as the Ring is entrusted to his care. He must leave his home and make a perilous journey across the realms of Middle-earth to the Crack of Doom, deep inside the territories of the Dark Lord. There he must destroy the Ring forever and foil the Dark Lord in his evil purpose.<br>*BOX SET*</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					$15.00					<br><br>
+					<input type="checkbox" name="prince" value="1">
+					<input type="number" name="princeno" value="0" min="0">
+				</td>
+				<td><p align="center"><img src="prince.jpg" alt="LE PETIT PRINCE" height="200"></p></td>
+				<td>
+					<p><b><i>Le Petit Prince</i> - Antoine de Saint-Exup&eacute;ry</b>: Imaginez-vous perdu dans le d&eacute;sert, loin de tout lieu habit&eacute;, et face &agrave; un petit gar&ccedil;on tout blond, surgi de nulle part. Si de surcro&icirc;t ce petit gar&ccedil;on vous demande avec insistance de dessiner un mouton, vous voil&agrave; plus qu'&eacute;tonn&eacute; ! &Agrave; partir de l&agrave;, vous n'aurez plus qu'une seule interrogation : savoir d'o&ugrave; vient cet &eacute;trange petit bonhomme et conna&icirc;tre son histoire. S'ouvre alors un monde &eacute;trange et po&eacute;tique, peupl&eacute; de m&eacute;taphores, d&eacute;crit &agrave; travers les paroles d'un "petit prince" qui porte aussi sur notre monde &agrave; nous un regard tout neuf, empli de na&iuml;vet&eacute;, de fra&icirc;cheur et de gravit&eacute;. Tr&egrave;s vite, vous d&eacute;couvrez d'&eacute;tranges plan&egrave;tes, peupl&eacute;es d'hommes d'affaires, de buveurs, de vaniteux, d'allumeurs de r&eacute;verb&egrave;res.
+Cette &eacute;vocation onirique, &agrave; laquelle participent les aquarelles de l'auteur, a tout d'un parcours initiatique, o&ugrave; l'enfant apprendra les richesses essentielles des rapports humains et le secret qui les r&eacute;git : "On ne voit bien qu'avec le coeur, l'essentiel est invisible pour les yeux."
+Oeuvre essentielle de la litt&eacute;rature, ce livre de Saint-Exup&eacute;ry est un ouvrage que l'on aura &agrave; coeur de raconter &agrave; son enfant, page apr&egrave;s page, histoire aussi de red&eacute;couvrir l'enfant que l'on &eacute;tait autrefois, avant de devenir une grande personne !<br>*FRENCH LANGUAGE*</p>
+				</td>
+			</tr>
+			<tr><td><input type="submit" value="Place Order"></td></tr>
+		</table>
+	</form>
 </body>
 
 </html>
